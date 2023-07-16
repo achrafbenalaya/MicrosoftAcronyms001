@@ -1804,5 +1804,129 @@ export const data =
     {
         "key": "ZTI",
         "name": "Zero Touch Installation"
-    }
+    },
+    {
+        "key": "AAS",
+        "name": "Azure Analysis Services"
+    },
+    {
+        "key": "AI",
+        "name": "Artificial Intelligence"
+    },
+    {
+        "key": "API",
+        "name": "Application Programming Interface"
+    },
+    {
+        "key": "APIM",
+        "name": "Azure API Management"
+    },
+    {
+        "key": "ASE",
+        "name": "App Service Environment"
+    },
+    {
+        "key": "ATP",
+        "name": "Azure Advanced Threat Protection"
+    },
+    {
+        "key": "BGP",
+        "name": "Border Gateway Protocol"
+    },
+    {
+        "key": "CLI",
+        "name": "Command-Line Interface"
+    },
+    {
+        "key": "COSMOS DB",
+        "name": "Azure Cosmos DB"
+    },
+    {
+        "key": "CPU",
+        "name": "Central Processing Unit"
+    },
+
+    {
+        "key": "CSV",
+        "name": "Comma-Separated Values"
+    },
+
+    {
+        "key": "DDoS",
+        "name": "Distributed Denial of Service"
+    },
+
+    {
+        "key": "DNS",
+        "name": "Domain Name System"
+    },
+   {
+        "key": "DR",
+        "name": "Disaster Recovery"
+    },
+    {
+        "key": "DSVM",
+        "name": "Data Science Virtual Machine"
+    },
+    {
+        "key": "EBS",
+        "name": "Elastic Block Store"
+    },
+    {
+        "key": "EDI",
+        "name": "Electronic Data Interchange"
+    },
+    {
+        "key": "EFS",
+        "name": "Elastic File System"
+    },
+    {
+        "key": "GPU",
+        "name": "Graphics Processing Unit"
+    },
+
+    {
+        "key": "HPC",
+        "name": "High-Performance Computing"
+    },
+    {
+        "key": "HTTP",
+        "name": "Hypertext Transfer Protocol"
+    },
+    {
+        "key": "HTTPS",
+        "name": "Hypertext Transfer Protocol Secure"
+    },
+    {
+        "key": "IAM",
+        "name": "Identity and Access Management"
+    },
+    {
+        "key": "JSON",
+        "name": "JavaScript Object Notation"
+    },
+    {
+        "key": "LRS",
+        "name": "Locally Redundant Storage"
+    },
+    {
+        "key": "MLOps",
+        "name": "Machine Learning Operations"
+    },
+    {
+        "key": "NAT",
+        "name": "Network Address Translation"
+    },
+    {
+        "key": "NAT",
+        "name": "Network Address Translation"
+    },
+    {
+        "key": "NIC",
+        "name": "Network Interface Card"
+    },
+    {
+        "key": "NLP",
+        "name": "Natural Language Processing"
+    },
 ]
