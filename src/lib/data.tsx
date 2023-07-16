@@ -1929,4 +1929,12 @@ export const data =
         "key": "NLP",
         "name": "Natural Language Processing"
     },
+    {
+        "key": "KV",
+        "name": "Key vault"
+    },
+    {
+        "key": "ACI",
+        "name": "Azure Container Instance"
+    },
 ]
