@@ -1918,10 +1918,6 @@ export const data =
         "name": "Network Address Translation"
     },
     {
-        "key": "NAT",
-        "name": "Network Address Translation"
-    },
-    {
         "key": "NIC",
         "name": "Network Interface Card"
     },
@@ -1937,4 +1933,80 @@ export const data =
         "key": "ACI",
         "name": "Azure Container Instance"
     },
+    {
+        "key": "AOAI",
+        "name": "Azure OpenAI Service"
+    },
+    {
+        "key": "ACS",
+        "name": "Azure Container Storage"
+    },
+    {
+        "key": "AMA",
+        "name": "Azure Monitor Agent"
+    },
+    {
+        "key": "AKS-HCI",
+        "name": "Azure Kubernetes Service on Azure Stack HCI"
+    },
+    {
+        "key": "ARC",
+        "name": "Azure Resource Controller"
+    },
+    {
+        "key": "AMSI",
+        "name": "Azure Malware Scanning Interface"
+    },
+    {
+        "key": "MDA",
+        "name": "Microsoft Defender for Applications"
+    },
+    {
+        "key": "MDCA",
+        "name": "Microsoft Defender for Cloud Apps (formerly MCAS)"
+    },
+    {
+        "key": "MDDVM",
+        "name": "Microsoft Defender for Virtualized Environments"
+    },
+    {
+        "key": "AMCE",
+        "name": "Azure Multi-Cloud Environment"
+    },
+    {
+        "key": "CNCF",
+        "name": "Cloud Native Computing Foundation"
+    },
+    {
+        "key": "DAPR",
+        "name": "Distributed Application Runtime"
+    },
+    {
+        "key": "GPT",
+        "name": "Generative Pre-trained Transformer"
+    },
+    {
+        "key": "RAG",
+        "name": "Retrieval Augmented Generation"
+    },
+    {
+        "key": "LLM",
+        "name": "Large Language Model"
+    },
+    {
+        "key": "MMDA",
+        "name": "Microsoft Multimodal AI"
+    },
+    {
+        "key": "MIDI",
+        "name": "Microsoft Intelligent Data Index"
+    },
+    {
+        "key": "MCSA",
+        "name": "Microsoft Copilot Studio for Agents"
+    },
+    {
+        "key": "AGA",
+        "name": "Azure Generative AI"
+    }
 ]
