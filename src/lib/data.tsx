@@ -8,6 +8,10 @@ export interface DataType {
 export const data =
 [
     {
+        "key": "achraf",
+        "name": "achraf ben alaya"
+    },
+    {
         "key": "AD",
         "name": "Active Directory"
     },
@@ -1128,8 +1132,6 @@ export const data =
         "name": "Revenue Builder Incentive"
     },
     {
-
-
         "key": "RD",
         "name": "Research and Development"
     },
@@ -1416,8 +1418,6 @@ export const data =
     {
         "key": "SWP",
         "name": "Specialization Work Program"
-
-
     },
     {
         "key": "TAP",
@@ -1709,8 +1709,6 @@ export const data =
     },
     {
         "key": "WIM",
-
-
         "name": "Windows Imaging Format"
     },
     {
@@ -1845,22 +1843,19 @@ export const data =
         "key": "CPU",
         "name": "Central Processing Unit"
     },
-
     {
         "key": "CSV",
         "name": "Comma-Separated Values"
     },
-
     {
         "key": "DDoS",
         "name": "Distributed Denial of Service"
     },
-
     {
         "key": "DNS",
         "name": "Domain Name System"
     },
-   {
+    {
         "key": "DR",
         "name": "Disaster Recovery"
     },
@@ -1884,7 +1879,6 @@ export const data =
         "key": "GPU",
         "name": "Graphics Processing Unit"
     },
-
     {
         "key": "HPC",
         "name": "High-Performance Computing"
@@ -2009,4 +2003,4 @@ export const data =
         "key": "AGA",
         "name": "Azure Generative AI"
     }
-]
+];
