@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 
-export default function ThemeWrapper({ children }: { children: React.ReactNode }) {
+export default function ThemeWrapper() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
@@ -16,5 +16,8 @@ export default function ThemeWrapper({ children }: { children: React.ReactNode }
     document.documentElement.className = theme;
   }, [theme]);
 
-  return <>{children}</>;
+  // This component only applies the theme class to <html>, it does not
+  // accept or render children to avoid serializing interactive components
+  // from the server into client component props (RSC restriction).
+  return null;
 }

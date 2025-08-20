@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import ThemeWrapper from './theme';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeWrapper>{children}</ThemeWrapper>
+        <ThemeWrapper />
+        {children}
       </body>
     </html>
   )
-import ThemeWrapper from './theme';
 }
