@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
+import styles from './theme-toggle.module.css';
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -17,32 +18,17 @@ export default function ThemeToggle() {
     document.documentElement.className = theme;
   }, [theme]);
 
-  const buttonStyle = (active = false) => ({
-    marginBottom: '1rem',
-    marginRight: 8,
-    padding: '0.5rem 1rem',
-    borderRadius: 8,
-    border: active ? '2px solid var(--primary)' : '1px solid rgba(0,0,0,0.1)',
-    background: active ? 'var(--primary)' : 'transparent',
-    color: active ? 'white' : 'var(--foreground)',
-    cursor: 'pointer',
-  } as const);
+  const toggle = () => setTheme((t) => (t === 'dark' ? 'light' : 'dark'));
 
   return (
-    <div style={{ marginBottom: '1rem' }}>
+    <div className={styles.container}>
       <button
-        onClick={() => setTheme('light')}
-        aria-pressed={theme === 'light'}
-        style={buttonStyle(theme === 'light')}
-      >
-        White Theme
-      </button>
-      <button
-        onClick={() => setTheme('dark')}
+        className={`${styles.switch} ${theme === 'dark' ? styles.dark : styles.light}`}
+        onClick={toggle}
         aria-pressed={theme === 'dark'}
-        style={buttonStyle(theme === 'dark')}
+        aria-label="Toggle theme"
       >
-        Dark Mode
+        <span className={styles.knob} />
       </button>
     </div>
   );
