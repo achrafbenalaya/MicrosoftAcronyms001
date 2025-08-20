@@ -17,12 +17,33 @@ export default function ThemeToggle() {
     document.documentElement.className = theme;
   }, [theme]);
 
+  const buttonStyle = (active = false) => ({
+    marginBottom: '1rem',
+    marginRight: 8,
+    padding: '0.5rem 1rem',
+    borderRadius: 8,
+    border: active ? '2px solid var(--primary)' : '1px solid rgba(0,0,0,0.1)',
+    background: active ? 'var(--primary)' : 'transparent',
+    color: active ? 'white' : 'var(--foreground)',
+    cursor: 'pointer',
+  } as const);
+
   return (
-    <button
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      style={{ marginBottom: '1rem', padding: '0.5rem 1rem', borderRadius: 8, border: 'none', background: 'var(--primary)', color: 'var(--foreground)', cursor: 'pointer' }}
-    >
-      Switch to {theme === 'dark' ? 'Light' : 'Dark'} Mode
-    </button>
+    <div style={{ marginBottom: '1rem' }}>
+      <button
+        onClick={() => setTheme('light')}
+        aria-pressed={theme === 'light'}
+        style={buttonStyle(theme === 'light')}
+      >
+        White Theme
+      </button>
+      <button
+        onClick={() => setTheme('dark')}
+        aria-pressed={theme === 'dark'}
+        style={buttonStyle(theme === 'dark')}
+      >
+        Dark Mode
+      </button>
+    </div>
   );
 }
