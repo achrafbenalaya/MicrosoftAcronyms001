@@ -1,0 +1,37 @@
+.container {
+  margin-bottom: 1rem;
+}
+
+.switch {
+  width: 56px;
+  height: 32px;
+  border-radius: 999px;
+  border: 2px solid var(--primary);
+  background: linear-gradient(180deg, var(--secondary), rgba(0,0,0,0.03));
+  display: inline-flex;
+  align-items: center;
+  padding: 4px;
+  cursor: pointer;
+  transition: background 200ms ease, border 200ms ease;
+}
+
+.switch.light {
+  background: #fff;
+}
+
+.switch.dark {
+  background: #333;
+}
+
+.knob {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: white;
+  transition: transform 200ms ease, background 200ms ease;
+}
+
+.switch.dark .knob {
+  transform: translateX(24px);
+  background: #222;
+}
