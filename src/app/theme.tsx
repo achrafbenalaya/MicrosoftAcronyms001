@@ -1,6 +1,7 @@
+"use client";
 import { useEffect, useState } from 'react';
 
-export function useDarkMode() {
+export default function ThemeWrapper({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
@@ -11,5 +12,9 @@ export function useDarkMode() {
     return () => mq.removeEventListener('change', handler);
   }, []);
 
-  return [theme, setTheme] as const;
+  useEffect(() => {
+    document.documentElement.className = theme;
+  }, [theme]);
+
+  return <>{children}</>;
 }

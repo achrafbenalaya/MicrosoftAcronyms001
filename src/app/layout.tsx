@@ -1,7 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { useDarkMode } from './theme';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,10 +14,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const [theme] = typeof window !== 'undefined' ? useDarkMode() : ['light'];
   return (
-    <html lang="en" className={theme}>
-      <body className={inter.className}>{children}</body>
+    <html lang="en">
+      <body className={inter.className}>
+        <ThemeWrapper>{children}</ThemeWrapper>
+      </body>
     </html>
   )
+import ThemeWrapper from './theme';
 }
