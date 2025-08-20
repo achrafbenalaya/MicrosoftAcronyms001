@@ -19,6 +19,11 @@
   );
   --secondary-glow: radial-gradient(
     rgba(255, 255, 255, 1),
+    /* Light theme */
+    --background: #fff;
+    --foreground: #222;
+    --primary: #0078d4;
+    --secondary: #f3f3f3;
     rgba(255, 255, 255, 0)
   );
 
@@ -51,6 +56,13 @@
       to bottom right,
       rgba(1, 65, 255, 0),
       rgba(1, 65, 255, 0),
+  /* Dark theme */
+  html.dark {
+    --background: #181818;
+    --foreground: #f3f3f3;
+    --primary: #0078d4;
+    --secondary: #222;
+  }
       rgba(1, 65, 255, 0.3)
     );
 
@@ -86,13 +98,8 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background: var(--background);
+    color: var(--foreground);
 }
 
 a {
